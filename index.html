@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aroundly Club — Speaking Community</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <nav class="nav">
+      <div class="logo">aroundly<span>.club</span></div>
+      <a href="#apply" class="nav-cta">Apply Now</a>
+    </nav>
+    <div class="hero-content">
+      <p class="hero-tag">A Curated Speaking Community</p>
+      <h1>Speak Up.<br>Stand Out.</h1>
+      <p class="hero-desc">Join a handpicked circle of ambitious speakers. We practice, we grow, we connect — together.</p>
+      <a href="#apply" class="btn btn-primary">Apply to Join</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2>What is Aroundly?</h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-icon">🎙️</div>
+          <h3>Speaking Sessions</h3>
+          <p>Regular practice sessions to sharpen your speaking skills in a supportive environment.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">🤝</div>
+          <h3>Curated Members</h3>
+          <p>We handpick every member to ensure quality conversations and meaningful connections.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">🌍</div>
+          <h3>Growing Network</h3>
+          <p>Connect with diverse, driven people from different backgrounds and industries.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how" id="how">
+    <div class="container">
+      <h2>How It Works</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3>Apply</h3>
+          <p>Fill out the application form below. Tell us about yourself.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3>Get Reviewed</h3>
+          <p>We review every application carefully. Quality over quantity.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3>Join & Speak</h3>
+          <p>Once accepted, you're in. Start attending sessions and growing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPLICATION FORM -->
+  <section class="apply" id="apply">
+    <div class="container">
+      <h2>Apply to Aroundly</h2>
+      <p class="apply-desc">We're selective because we care about the experience. Take a few minutes to tell us about yourself.</p>
+
+      <form class="form" action="https://formspree.io/f/xaqkbprr" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" name="firstName" required placeholder="Your first name">
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName" name="lastName" required placeholder="Your last name">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="+90 5XX XXX XX XX">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="city">City *</label>
+          <input type="text" id="city" name="city" required placeholder="Where are you based?">
+        </div>
+
+        <div class="form-group">
+          <label for="occupation">Occupation / Field *</label>
+          <input type="text" id="occupation" name="occupation" required placeholder="e.g. Software Engineer, Student, Designer...">
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="englishLevel">English Level *</label>
+            <select id="englishLevel" name="englishLevel" required>
+              <option value="" disabled selected>Select your level</option>
+              <option value="beginner">Beginner (A1-A2)</option>
+              <option value="intermediate">Intermediate (B1-B2)</option>
+              <option value="advanced">Advanced (C1-C2)</option>
+              <option value="native">Native / Near-Native</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="age">Age Range *</label>
+            <select id="age" name="ageRange" required>
+              <option value="" disabled selected>Select range</option>
+              <option value="18-24">18 - 24</option>
+              <option value="25-30">25 - 30</option>
+              <option value="31-40">31 - 40</option>
+              <option value="40+">40+</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="linkedin">LinkedIn / Social Profile</label>
+          <input type="url" id="linkedin" name="socialProfile" placeholder="https://linkedin.com/in/yourprofile">
+        </div>
+
+        <div class="form-group">
+          <label for="whyJoin">Why do you want to join Aroundly? *</label>
+          <textarea id="whyJoin" name="whyJoin" required rows="4" placeholder="Tell us what motivates you to join a speaking community..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="howHeard">How did you hear about us?</label>
+          <select id="howHeard" name="howHeard">
+            <option value="" disabled selected>Select one</option>
+            <option value="instagram">Instagram</option>
+            <option value="twitter">Twitter / X</option>
+            <option value="linkedin">LinkedIn</option>
+            <option value="friend">A Friend</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <input type="hidden" name="_subject" value="New Aroundly Club Application">
+
+        <button type="submit" class="btn btn-primary btn-submit">Submit Application</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="logo">aroundly<span>.club</span></div>
+      <p>&copy; 2026 Aroundly Club. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
