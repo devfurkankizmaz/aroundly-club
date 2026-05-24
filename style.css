@@ -258,8 +258,20 @@ body {
 }
 
 .feature-icon {
-  font-size: 1.6rem;
-  margin-bottom: 14px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.feature-icon svg {
+  width: 20px;
+  height: 20px;
 }
 
 .feature-card h3 {
