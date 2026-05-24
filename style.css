@@ -505,6 +505,78 @@ body {
   line-height: 1.7;
 }
 
+/* ---- CHECKBOX ---- */
+.form-checkbox {
+  margin-top: 8px;
+}
+
+.form-checkbox label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.85rem !important;
+  color: var(--text-secondary) !important;
+  cursor: pointer;
+  line-height: 1.5;
+}
+
+.form-checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  margin-top: 2px;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+
+.kvkk-link {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.kvkk-link:hover {
+  color: var(--accent-hover);
+}
+
+/* ---- KVKK ---- */
+.kvkk-section {
+  border-top: 1px solid var(--border);
+}
+
+.kvkk-content {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.kvkk-content p,
+.kvkk-content li {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.kvkk-content h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 24px 0 8px;
+}
+
+.kvkk-content ul {
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+
+.kvkk-content li {
+  margin-bottom: 4px;
+}
+
+.kvkk-content strong {
+  color: var(--text);
+}
+
 /* ---- FOOTER ---- */
 .footer {
   padding: 64px 0 40px;
